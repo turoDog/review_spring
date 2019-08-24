@@ -3,8 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="studentService" class="StudentService">
+    <!--<bean id="studentService" class="StudentService">
         <constructor-arg ref="studentDao"/>
+    </bean>-->
+
+    <bean id="studentService" class="StudentService">
+        <property name="studentDao" ref="studentDao"/>
     </bean>
 
     <bean id="studentDao" class="StudentDao"/>
