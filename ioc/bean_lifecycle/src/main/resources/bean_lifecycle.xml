@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 扫描bean -->
+    <context:component-scan base-package="com.nasus"/>
+
+    <!-- 实现了用户自定义初始化和销毁方法 -->
+    <bean id="person" scope="prototype" class="com.nasus.bean.Person" init-method="initMethod" destroy-method="destroyMethod">
+        <!-- 注入bean 属性名称 -->
+        <property name="name" value="nasus" />
+    </bean>
+
+    <!--引入自定义的BeanPostProcessor-->
+    <bean class="com.nasus.lifecycle.MyBeanPostProcessor"/>
+
+</beans>
