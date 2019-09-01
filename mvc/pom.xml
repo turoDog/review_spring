@@ -18,7 +18,6 @@
         <module>mvc_upload</module>
         <module>mvc_exception</module>
         <module>mvc_interceptor</module>
-        <module>mvc_ssm</module>
     </modules>
 
     <dependencies>

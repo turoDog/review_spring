@@ -14,6 +14,9 @@
     <modules>
         <module>noconfig</module>
         <module>xmlconfig</module>
+        <module>javaconfig</module>
+        <module>autoconfig</module>
+        <module>bean_lifecycle</module>
     </modules>
 
 
