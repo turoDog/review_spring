@@ -21,13 +21,8 @@
         </plugins>
     </build>
     <modules>
-        <module>chapter03/review_spring_profiles</module>
-        <module>chapter03/review_spring_conditional</module>
-        <module>chapter03/review_spring_scopedbeans</module>
-        <module>chapter03/review_spring_externals</module>
         <module>ioc</module>
-        <module>ioc</module>
-        <module>ioc</module>
+        <module>mvc</module>
     </modules>
 
 
